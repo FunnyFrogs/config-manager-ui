@@ -1,0 +1,9 @@
+<form [formGroup]="formGroup">
+  <div>
+    <input type="text" formControlName="name" placeholder="name">
+    <input type="text" formControlName="age" placeholder="age">
+    <input type="text" formControlName="email" placeholder="email">
+    <button (click)="submitData()"> Create</button>
+    <button routerLink="/dashboard">Dashboard</button>
+  </div>
+</form>
