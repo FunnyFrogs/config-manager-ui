@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { CanActivate, CanDeactivate, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router'
+import {
+  CanActivate,
+  CanDeactivate,
+  RouterStateSnapshot,
+  ActivatedRouteSnapshot
+} from '@angular/router';
 import { CreateFormComponent } from './cycles/create-form/create-form.component';
 
 @Component({
@@ -24,7 +29,7 @@ export class DataSaved implements CanDeactivate<CreateFormComponent> {
     if (component.canDeactivate()) {
       return true;
     } else {
-      window.alert('are you sure?');
+      // window.alert('are you sure?');
       return true;
     }
   }

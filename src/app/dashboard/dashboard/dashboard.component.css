@@ -1,0 +1,13 @@
+.app-header {
+  font-size: 40px;
+  border-bottom: 1px solid #dcd9d9;
+  color: #576f8e;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.list-items {
+  font-size: 37px;
+}

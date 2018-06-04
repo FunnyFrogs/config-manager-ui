@@ -1,5 +1,31 @@
-<nav>
-  <a routerLink="/carlist">Car List</a> |
-  <a routerLink="/carlist">Bike List</a>
-  <a routerLink="/cyclelist">Cycle List</a>
-</nav>
+<div class="container">
+  <div class="app-header row">
+    <div class="col-sm-11">
+      <span class="fa {{config.logo}}"></span>
+      <span>{{config.title}}</span>
+    </div>
+    <div class="col-sm-1">
+      <span class="fa fa-sign-out" aria-hidden="true" (click)="logOut()"></span>
+    </div>
+  </div>
+
+  <div class="panel panel-default p-2 mt-2 row" [ngSwitch]="config.layout">
+    <div class="row" *ngSwitchCase="'list'">
+      <div class="col-sm-12 card p-2 m-2 " *ngFor="let count of itemList">
+        <span class="fa list-items {{config.logo}}"> Model {{count}}T Steel  </span>
+      </div>
+    </div>
+    <div class="row" *ngSwitchCase="'grid'">
+      <div class="col-sm-3 card p-2 m-1 " *ngFor="let count of itemList">
+        Grid LayOut
+      </div>
+    </div>
+    <div *ngSwitchDefault>
+      <div class="col-sm-3 card p-2 m-2 " *ngFor="let count of itemList">
+        <div>
+          Default Layout
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

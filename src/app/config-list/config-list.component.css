@@ -1,0 +1,30 @@
+.selectedApp {
+  border-bottom: 1px solid #0069d9;
+  color: #0069d9;
+}
+
+a {
+  cursor: pointer;
+}
+
+.fa-times {
+  font-size: 23px;
+}
+
+.app-title {
+  font-size: 23px;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.application-item {
+  border-bottom: 1px solid #d6d3d3;
+  cursor: pointer;
+}
+
+.delete-app {
+  float: right;
+  margin-top: 13px;
+}
